@@ -1,0 +1,13 @@
+<h1>App 1</h1>
+
+<p *ngIf="messageApp2" [style]="{'background-color': messageApp2.color, 'margin-bottom': '10px;'}">
+  {{ messageApp2.text }}
+</p>
+
+<iframe #iframe src="http://127.0.0.1:4002" width="500px" height="180px"></iframe>
+
+<br>
+<button (click)="send()" style="margin-top: 20px;">Enviar Mensagem</button>
+
+<br>
+<button (click)="openApp2()" style="margin-top: 20px;">Abrir APP 2</button>

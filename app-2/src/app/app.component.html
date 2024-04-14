@@ -1,0 +1,7 @@
+<h1>App 2</h1>
+
+<p *ngIf="messageApp1" [style]="{'background-color': messageApp1.color, 'margin-bottom': '10px;'}">
+  {{ messageApp1.text }}
+</p>
+
+<button (click)="send()" style="margin-top: 10px;">Enviar Mensagem</button>
